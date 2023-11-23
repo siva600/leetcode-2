@@ -6,7 +6,7 @@ class Solution(object):
         """
         def split_sum(n):
 
-            return sum([int(x) ** 2 for x in list(str(n))])
+            return sum(int(x) ** 2 for x in list(str(n)))
         i = 0
 
         new_sum = split_sum(n)

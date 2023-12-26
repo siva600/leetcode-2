@@ -16,9 +16,8 @@ class Solution(object):
         	value1 =  0 if value1 is None else int(value1)
         	value2 =  0 if value2 is None else int(value2)
 
-        	sum_val = value1 + value2 + carry
 
-        	if sum_val == 0:
+        	if (sum_val := value1 + value2 + carry) == 0:
         		res = '0'
         		carry = 0
         	elif sum_val == 1:

@@ -23,10 +23,9 @@ class Solution(object):
             mid = (left + right) / 2
 
             print (mid)
-            value = mid ** 2
 
 
-            if value == num:
+            if (value := mid ** 2) == num:
 
 
                 print (value, num)

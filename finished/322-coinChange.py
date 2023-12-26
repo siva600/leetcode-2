@@ -4,10 +4,8 @@ class Solution(object):
         if amount == 0:
             return 0
 
-        num_coins = len(coins)
-        if num_coins == 1:
-            x = amount % coins[0] == 0
-            if x:
+        if (num_coins := len(coins)) == 1:
+            if x := amount % coins[0] == 0:
                 return int(amount / coins[0])
             else:
                 return -1
@@ -31,9 +29,8 @@ class Solution(object):
         if memo == []:
             return -1
 
-        last = memo[-1]
 
-        if last == float('inf'):
+        if (last := memo[-1]) == float('inf'):
             return -1
         else:
             return last

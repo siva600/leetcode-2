@@ -28,9 +28,8 @@ class Solution(object):
         	str_prime = s[i:i+len_p]
         	if not str_prime:
         		return acc
-        	s_counted = Counter(str_prime)
 
-        	if s_counted == p_counted:
+        	if (s_counted := Counter(str_prime)) == p_counted:
         		acc.append(i)
 
         return acc

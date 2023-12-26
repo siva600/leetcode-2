@@ -17,9 +17,8 @@ class Solution(object):
 
         	mid = (left + right) / 2
 
-        	value = mid ** 2 
 
-        	if value  == x:
+        	if (value := mid ** 2)  == x:
         		return int(mid)
         	elif value < x:
         		left = mid

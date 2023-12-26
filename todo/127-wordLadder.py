@@ -55,8 +55,7 @@ class Solution(object):
                     newWord = list(current)
                     newWord[index] = letter
 
-                    newWord = ''.join(newWord)
-                    if newWord == end:
+                    if (newWord := ''.join(newWord)) == end:
                         acc.append(path + [current])
                         return
 

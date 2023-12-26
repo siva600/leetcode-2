@@ -88,8 +88,7 @@ class SummaryRanges(object):
         acc = []
         nums = self.BST.inorder()
 
-        l = len(nums)
-        if l == 0:
+        if (l := len(nums)) == 0:
             return []
         elif l == 1:
             return [Interval(str(nums[0]), str(nums[0]))]

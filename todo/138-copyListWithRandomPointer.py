@@ -9,15 +9,13 @@ class Solution(object):
 
     def listStoreFromNode(self, node):
 
-        random_node = self.random
 
-        if random_node is None:
+        if (random_node := self.random) is None:
             return 'Empty', 'Empty'
 
         random_label = random_node.label
-        next_from_random = random_node.next
 
-        if next_from_random is None:
+        if (next_from_random := random_node.next) is None:
             return 'None', random_label
 
         return next_from_random.label, random_label

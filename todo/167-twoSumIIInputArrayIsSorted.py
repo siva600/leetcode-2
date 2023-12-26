@@ -15,9 +15,8 @@ class Solution(object):
             left = numbers[l_index]
             right = numbers[r_index]
 
-            total = left + right
 
-            if total == target:
+            if (total := left + right) == target:
                 return l_index + 1, r_index + 1
             elif total > target:
                 r_index -= 1

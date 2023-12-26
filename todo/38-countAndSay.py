@@ -22,9 +22,8 @@ class Solution(object):
         """
         n_as_list = str(n)
 
-        l = len(n_as_list)
 
-        if l == 0:
+        if (l := len(n_as_list)) == 0:
             return []
         elif l ==1 :
 

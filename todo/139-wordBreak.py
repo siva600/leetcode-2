@@ -6,9 +6,8 @@ class Solution(object):
         :rtype: bool
         """
 
-        l = len(s)
 
-        if l == 0:
+        if (l := len(s)) == 0:
             return False
 
         DT = [False for _ in range(l +  1)]

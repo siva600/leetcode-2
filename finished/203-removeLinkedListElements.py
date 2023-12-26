@@ -24,8 +24,7 @@ class Solution(object):
             if not nextHead:
                 break
             
-            nextHeadVal = nextHead.val
-            if nextHeadVal == val:
+            if (nextHeadVal := nextHead.val) == val:
                 lookAhead = head.next
                 while lookAhead and lookAhead.val == val:
                     lookAhead = lookAhead.next

@@ -6,8 +6,7 @@ class Solution(object):
         """
         acc = []
 
-        l = len(nums)
-        if l == 0:
+        if (l := len(nums)) == 0:
             return []
         elif l == 1:
             return [str(nums[0])]

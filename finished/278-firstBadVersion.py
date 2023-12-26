@@ -16,9 +16,8 @@ class Solution(object):
 
             mid = (left + right) / 2
 
-            tested = isBadVersion(mid)
 
-            if tested:
+            if tested := isBadVersion(mid):
                 right = mid
             else:
                 left = mid + 1

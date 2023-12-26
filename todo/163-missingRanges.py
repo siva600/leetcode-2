@@ -13,8 +13,7 @@ class Solution(object):
 
         acc = []
 
-        l = len(v)
-        if l == 1:
+        if (l := len(v)) == 1:
             return []
         elif l == 0:
             x = next(nums)

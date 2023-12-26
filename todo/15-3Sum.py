@@ -19,9 +19,8 @@ class Solution(object):
             left, right = i + 1, L - 1
             
             while left < right:
-                total = nums[left] + nums[right] + num
             
-                if total == 0:
+                if (total := nums[left] + nums[right] + num) == 0:
                     # record result.
                     res.append([nums[left], nums[right], num])
                     left += 1

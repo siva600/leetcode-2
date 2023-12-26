@@ -12,9 +12,8 @@ class Solution(object):
 
             index = index + 1
 
-            prev = ratings[index - 1]
 
-            if prev == current_rating:
+            if (prev := ratings[index - 1]) == current_rating:
                 print ('HERE')
                 acc[index] = acc[index - 1]
             elif prev > current_rating:

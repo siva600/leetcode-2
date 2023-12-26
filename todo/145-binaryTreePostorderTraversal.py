@@ -24,9 +24,8 @@ class Solution(object):
 
         while s:
 
-            val = s.pop()
 
-            if val is None:
+            if (val := s.pop()) is None:
                 continue
             elif isinstance(val, int) or isinstance(val, float):
                 acc.append(val)

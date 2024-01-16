@@ -14,13 +14,13 @@ class Solution(object):
         }
 
         self.order = {
-            'I': set(['V', 'X']),
-            'V': set(['X']),
-            'X': set(['L', 'C']),
-            'L': set(['C']),
-            'C': set(['D','M']),
-            'D': set(['M']),
-            'M': set(['none'])
+            'I': {'V', 'X'},
+            'V': {'X'},
+            'X': {'L', 'C'},
+            'L': {'C'},
+            'C': {'D','M'},
+            'D': {'M'},
+            'M': {'none'}
         }
 
         self.seen = set()

@@ -16,7 +16,7 @@ class Solution(object):
 
     def equalToZero(self, points):
 
-        return all ([x == '0' for x in points])
+        return all (x == '0' for x in points)
 
     def numIslands(self, grid):
         """

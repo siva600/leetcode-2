@@ -6,7 +6,7 @@ class Solution(object):
         """
 
 
-        if all([x < 0 for x in nums]):
+        if all(x < 0 for x in nums):
             return max(nums)
 
         l = len(nums)

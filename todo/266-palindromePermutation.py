@@ -10,5 +10,5 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        return any([v >= 2 for k,v in c.items()])
+        return any(v >= 2 for k,v in c.items())
         

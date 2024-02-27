@@ -1,5 +1,4 @@
 from collections import deque
-from pdb import set_trace
 
 s = r"dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext"
 
@@ -50,8 +49,6 @@ class Solution(object):
             token_stripped = token.lstrip('\\t')
 
             stack_head, stack_depth = stack[-1]
-
-            set_trace()
 
             while stack_depth + 1 != token_depth:
                 stack_head, stack_depth = stack.pop()

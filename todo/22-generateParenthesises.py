@@ -20,7 +20,7 @@ class Solution(object):
 
                 return sub(n-1,accPrime)
 
-        return sub(n, set(['()']))
+        return sub(n, {'()'})
 
 
 

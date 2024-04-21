@@ -31,7 +31,7 @@ class Solution(object):
 
 
 s = "aaaaaaa"
-d = set(["aaaa","aaa"])
+d = {"aaaa","aaa"}
 
 r = Solution()
 

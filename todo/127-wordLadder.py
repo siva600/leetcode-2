@@ -27,7 +27,7 @@ class Solution(object):
         """
         acc = []
 
-        index_to_letter_dict = self.possible_letters_at_index(wordList.union(set([beginWord,endWord])))
+        index_to_letter_dict = self.possible_letters_at_index(wordList.union({beginWord,endWord}))
 
         total_len = len(wordList)
 
@@ -86,7 +86,7 @@ class Solution(object):
 begin = "a"
 end = "c"
 
-l = set(['a','b','c'])
+l = {'a','b','c'}
 
 r = Solution()
 
